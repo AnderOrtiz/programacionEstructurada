@@ -1,20 +1,12 @@
 {
-  "name": "programacionestructurada",
+  "name": "lab2",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lab2.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AnderOrtiz/programacionEstructurada.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AnderOrtiz/programacionEstructurada/issues"
-  },
-  "homepage": "https://github.com/AnderOrtiz/programacionEstructurada#readme",
   "description": ""
 }
