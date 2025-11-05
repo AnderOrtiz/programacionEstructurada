@@ -1,12 +1,9 @@
-/**1. Condicionales básicas (if, else if, else)
-• Crea un programa que solicite un número y determine si es positivo, negativo o
-cero. Muestra el resultado en consola.*/
-
+/**Solicitar al usuario un número y determinar si este es un numero positivo o negativo*/
 import { createInterface } from 'readline';
 
 const rl = createInterface({ input: process.stdin, output: process.stdout });
 
-const determinarNum = (num) => {
+rl.question('Ingrese un número: ', num => {
     rl.close()
     if (num > 0) {
         console.log(`${num} es positivo`);
@@ -15,6 +12,4 @@ const determinarNum = (num) => {
     } else {
         console.log(`${num} es cero`);
     }
-}
-
-rl.question('Ingrese un número: ', determinarNum)
+})
