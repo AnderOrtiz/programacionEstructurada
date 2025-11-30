@@ -2,6 +2,7 @@ import { libros } from "../data/libros.js";
 import { init, rl } from "../main.js";
 
 
+// Función para crear un objeto 
 const crearLibro = (titulo, autor, year, generos) => {
     generos = generos.split(",").map(genero => genero.trim());
 
@@ -15,6 +16,7 @@ const crearLibro = (titulo, autor, year, generos) => {
     };
 };
 
+// Creamos una función para agregar un libro al array, por medio de preguntas al usuario. 
 export const agregarLibro = () => {
     rl.question('Ingresa el título del libro: ', (titulo) => {
         titulo = titulo.trim();
@@ -36,6 +38,7 @@ export const agregarLibro = () => {
 
                 rl.question('Ingresa los géneros separados por coma: ', (generos) => {
 
+                    // Se guarda el libro en el array "Libros"
                     const libro = crearLibro(titulo, autor, year, generos);
                     libros.push(libro);
 
