@@ -1,5 +1,6 @@
 import { libros } from "../data/libros.js";
-import { init, rl } from "../main.js";
+import { init } from "../main.js";
+import { rl } from "../services/rl.js";
 
 
 // Función para crear un objeto 

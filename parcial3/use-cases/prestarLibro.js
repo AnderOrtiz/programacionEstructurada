@@ -1,5 +1,7 @@
 import { libros } from "../data/libros.js";
-import { rl, init } from "../main.js";
+import { init } from "../main.js";
+import { rl } from "../services/rl.js";
+
 
 /**
  * Función para registrar el préstamo de un libro a un usuario

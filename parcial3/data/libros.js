@@ -1,10 +1,17 @@
+// Exportamos un arreglo llamado "libros" para que pueda ser usado en otros módulos
 export const libros = [
     {
+        // Título del libro
         titulo: "the shining",
+        // Autor del libro
         autor: "Stephen King",
+        // Año de publicación
         year: 1977,
+        // Lista de géneros del libro
         generos: ["Terror", "Sobrenatural"],
+        // Indica si el libro está disponible para préstamo
         disponible: true,
+        // Información del préstamo (null si no está prestado)
         prestamo: null
     },
     {
@@ -13,6 +20,7 @@ export const libros = [
         year: 1949,
         generos: ["Distopía", "Ciencia ficción"],
         disponible: false,
+        // Si el libro está prestado, aquí se guarda a quién y cuándo
         prestamo: { usuario: "Carlos", fecha: "2025-02-01" }
     },
     {

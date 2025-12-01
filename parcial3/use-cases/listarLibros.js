@@ -1,5 +1,7 @@
 import { libros } from "../data/libros.js";
-import { init, rl } from "../main.js";
+import { init } from "../main.js";
+import { rl } from "../services/rl.js";
+
 
 /**
  * Función principal para listar y buscar libros en el sistema
